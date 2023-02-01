@@ -1,0 +1,289 @@
+@import url(reset.css);
+/* --------------------------------------------------- */
+@font-face {
+  font-family: "Rubik Moonrocks";
+  src: url("../fonts/RubikMoonrocks-Regular.woff2") format("woff2"),
+    url("../fonts/RubikMoonrocks-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* -------------------------------------------------------- */
+
+body {
+  max-width: 1250px;
+  font-family: "Pacifico", sans-serif;
+  padding: 10px;
+  margin: 0 auto;
+  background: #812bc6;
+  background: -moz-linear-gradient(
+    top,
+    #812bc6 9%,
+    #431fa5 28%,
+    #ce27c3 45%,
+    #8327ad 66%,
+    #8327ad 82%,
+    #dd77da 99%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #812bc6 9%,
+    #431fa5 28%,
+    #ce27c3 45%,
+    #8327ad 66%,
+    #8327ad 82%,
+    #dd77da 99%
+  );
+  background: linear-gradient(
+    to bottom,
+    #812bc6 9%,
+    #431fa5 28%,
+    #ce27c3 45%,
+    #8327ad 66%,
+    #8327ad 82%,
+    #dd77da 99%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#812bc6', endColorstr='#dd77da',GradientType=0 ); /* IE6-9 */
+}
+@media (max-width: 1024px) {
+  body {
+    padding: 45px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 35px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    padding: 25px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    padding: 15px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    padding: 15px;
+  }
+}
+/* -----------HEDAER------------------------------------------- */
+.header__block {
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+.header__title {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-size: 80px;
+  color: #00eaff;
+  text-shadow: 5px 5px 10px rgb(21, 0, 254);
+  text-transform: uppercase;
+  letter-spacing: 40px;
+}
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .header__title {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+}
+/* --------------MAIN__BLOCK-TEXT------------------------------------- */
+.main__block-text {
+  font-size: 20px;
+}
+.main__block-text span {
+  color: #00eaff;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(21, 0, 255);
+}
+/* ------------------------------------------------------- */
+.title {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: #00eaff;
+  text-shadow: 5px 5px 10px rgb(21, 0, 255);
+}
+/* ---------------MAIN__BLOCK-CONTENT---------------------------------------- */
+.main__block-content {
+  max-width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content__tilte {
+}
+@media (max-width: 768px) {
+  .content__tilte {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .content__tilte {
+    font-size: 30px;
+  }
+}
+.content__list {
+  font-size: 20px;
+  color: #00eaff;
+}
+/* -------------MAIN__BLOCK-DEFINITION---------------------------------------- */
+.main__block-definition {
+  display: flex;
+  flex-wrap: wrap;
+}
+.definition__title {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+@media (max-width: 768px) {
+  .definition__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .definition__title {
+    font-size: 20px;
+  }
+}
+.definition__text {
+  font-size: 20px;
+}
+/* ------------MAIN__BLOCK-HISTORY------------------------------------ */
+.main__block-history {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history__title {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+@media (max-width: 768px) {
+  .history__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .history__title {
+    font-size: 30px;
+  }
+}
+.history__text {
+  font-size: 20px;
+}
+/* -----------MAIN__BLOCK_EVOLUTION--------------------------------------- */
+.main__block-evolution {
+  display: flex;
+  flex-wrap: wrap;
+}
+.evolution-title {
+  max-width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+@media (max-width: 768px) {
+  .evolution-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .evolution-title {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+.evolution__text {
+  font-size: 20px;
+}
+/* -----------MAIN__BLOCK-REPRESENTATION------------------------------------------------- */
+.main__block-representation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.representation__title {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+@media (max-width: 680px) {
+  .representation__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .representation__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .representation__title {
+    font-size: 20px;
+  }
+}
+.representation__text {
+  font-size: 20px;
+}
+/* ------------FOOTER--------------------------------- */
+.footer {
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px 5px rgb(21, 0, 255);
+  background: url(../img/definition/field_image_istock-516189065.jpg)
+    center/cover no-repeat fixed;
+}
+.links__title {
+}
+@media (max-width: 425px) {
+  .links__title {
+    font-size: 30px;
+  }
+}
+
+.footer__list {
+  font-size: 20px;
+  color: #00eaff;
+}
+@media (max-width: 425px) {
+  .footer__list {
+    font-size: 16px;
+  }
+}
