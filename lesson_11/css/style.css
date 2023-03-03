@@ -1,0 +1,196 @@
+@import url("reset.css");
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+.wrapper__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+}
+.header__container {
+  max-width: 1200px;
+  padding: 30px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__category {
+}
+.category {
+}
+.category__list {
+}
+.category__item {
+  line-height: 1.5;
+  font-weight: 600;
+  color: #212b36;
+  position: relative;
+  padding: 9px 20.81px 9px 20.39px;
+  background: #f4f7ff;
+  border-radius: 5px;
+}
+.category__item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.category__link {
+  padding-bottom: 60px;
+}
+.category__link::after {
+  content: "";
+  display: inline-block;
+  background: url(../img/icon/Vector.svg) center no-repeat;
+  width: 10.8px;
+  height: 5.8px;
+  margin-left: 13px;
+  vertical-align: middle;
+  transition: all 300ms ease;
+}
+.category__link:hover::after {
+  transform: scale(1.5);
+}
+.sub-menu__triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+  border-radius: 2px;
+  position: absolute;
+  top: -5%;
+  left: 13%;
+  z-index: 1;
+}
+.category__sub-menu {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2;
+  background: #ffffff;
+  border: 0.5px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 22px 0px 22px 0px;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 22px 24px;
+}
+.sub-menu__item {
+  position: relative;
+  font-weight: 500;
+  margin: 0px 0px 15px 0px;
+  color: #637381;
+}
+.sub-menu__item:hover .sub-menu__fashion {
+  display: block;
+}
+.sub-menu__item:last-child {
+  margin-bottom: 0px;
+}
+.sub-menu__link {
+  display: inline-block;
+  position: relative;
+}
+.sub-menu__link:hover {
+  color: #3056d3;
+}
+.sub-menu__link_arrow::after {
+  position: absolute;
+  top: 23%;
+  left: 127px;
+  content: "";
+  display: inline-block;
+  background: url(../img/icon/arrow.svg) center no-repeat;
+  width: 5px;
+  height: 9.31px;
+  transition: all 300ms ease;
+}
+.sub-menu__link_arrow:hover::after {
+  transform: scale(1.5);
+}
+.sub-menu__fashion {
+  position: absolute;
+  top: -85%;
+  left: 118%;
+  display: none;
+  min-width: 180px;
+  background: #ffffff;
+  border: 0.5px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 30px;
+}
+.fashion-list {
+}
+.fashion-list__item {
+  margin: 0px 0px 12px 0px;
+}
+.fashion-list__item:last-child {
+  margin-bottom: 0px;
+}
+.fashion-list__title {
+  font-weight: 600;
+  color: #212b36;
+  margin: 0px 0px 20px 0px;
+}
+.fashion-list__link {
+}
+.fashion-list__link_font-weight {
+}
+.fashion-list__link_color-blue {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+  line-height: 1.21;
+  font-weight: 600;
+  color: #212b36;
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item:hover {
+  color: #3056d3;
+}
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+.menu__link {
+}
+.menu__link_arrow {
+}
+.menu__link_arrow::after {
+  content: "";
+  display: inline-block;
+  background: url(../img/icon/Vector.svg) center no-repeat;
+  width: 10.8px;
+  height: 5.8px;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+.menu__link_color-blue {
+}
+.header__actions {
+}
+.header__action__item {
+  display: inline-block;
+}
+.header__action__item:not(:last-child) {
+  margin-right: 20px;
+}
+.main__container {
+  max-width: 1200px;
+  padding: 150px 15px;
+  margin: 0 auto;
+}
