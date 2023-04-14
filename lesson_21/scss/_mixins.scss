@@ -1,0 +1,17 @@
+//REM
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+//EM
+@function em($px, $current: 16) {
+  $result: math.div($px, $current) + em;
+  @return $result;
+}
+// TITLE
+@mixin title($titlecolor: #f8f9fa) {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: $titlecolor;
+}
