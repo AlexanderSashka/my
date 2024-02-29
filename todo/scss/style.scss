@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  overflow-x: hidden;
+  position: relative;
+  background-color: rgb(210, 188, 210);
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+//========================================================================================================================================================
+
+.wrapper {
+  max-width: 1300px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.title {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.todo-list {
+  width: 800px;
+  margin: 0 auto;
+  // .todo-list__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .todo-list__input
+
+  &__input {
+    border: 2px solid green;
+    padding: 5px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #85b4d8;
+    color: #000000;
+    &::placeholder {
+      color: #000000;
+    }
+  }
+
+  // .todo-list__items
+
+  &__items {
+    display: grid;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  // .todo-list__item
+
+  &__item {
+    background-color: #85b4d8;
+    height: 40px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .todo-list__button-add
+
+  &__button-add {
+    @media (any-hover: hover) {
+      &:hover::after {
+        transform: rotate(360deg);
+      }
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      background: url("../img/add.svg") 0 0 / 100% no-repeat;
+      width: 35px;
+      height: 35px;
+      transition: all 0.5s;
+    }
+  }
+
+  // .todo-list__content
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .todo-list__button-delete
+
+  &__button-delete {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #f43535;
+    text-align: center;
+    display: none;
+  }
+}
+.delete {
+  background: url("../img/delete.svg") 0 0 / 100% no-repeat;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
